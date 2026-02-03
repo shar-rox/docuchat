@@ -32,7 +32,7 @@ User Query → Embeddings ←→ Vector Store (ChromaDB)
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/docuchat.git
+git clone https://github.com/shar-rox/docuchat.git
 cd docuchat
 
 # Create virtual environment
