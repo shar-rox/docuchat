@@ -7,7 +7,7 @@ Thank you for your interest in contributing to DocuChat! This document provides 
 1. Fork the repository
 2. Clone your fork:
    ```bash
-   git clone https://github.com/yourusername/docuchat.git
+   git clone https://github.com/shar-rox/docuchat.git
    cd docuchat
    ```
 
