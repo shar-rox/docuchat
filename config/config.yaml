@@ -1,0 +1,40 @@
+# DocuChat Configuration
+
+# Model Settings
+models:
+  embedding:
+    name: "sentence-transformers/all-MiniLM-L6-v2"
+    device: "cpu"  # or "cuda" for GPU
+  
+  llm:
+    provider: "openai"  # or "anthropic"
+    model: "gpt-4-turbo-preview"
+    temperature: 0.1
+    max_tokens: 1000
+
+# Document Processing
+document_processing:
+  chunk_size: 800
+  chunk_overlap: 200
+  max_chunks_per_doc: 500
+  supported_formats:
+    - ".pdf"
+
+# Vector Database
+vector_store:
+  provider: "chromadb"
+  persist_directory: "./data/chroma_db"
+  collection_name: "documents"
+  distance_metric: "cosine"
+
+# Retrieval Settings
+retrieval:
+  top_k: 5
+  min_similarity_score: 0.5
+  rerank: false
+
+# Application Settings
+app:
+  log_level: "INFO"
+  enable_caching: true
+  cache_dir: "./data/cache"

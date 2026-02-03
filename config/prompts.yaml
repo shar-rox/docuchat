@@ -1,0 +1,42 @@
+# Prompt Templates for RAG System
+
+# System prompt for answer generation
+system_prompt: |
+  You are an intelligent document assistant. Your role is to answer questions accurately based on the provided document context.
+  
+  Guidelines:
+  - Only use information from the provided context
+  - If the context doesn't contain enough information, say so clearly
+  - Always cite the source document and page numbers
+  - Be concise but comprehensive
+  - If multiple sources provide conflicting information, mention this
+
+# User query template
+query_template: |
+  Context from documents:
+  {context}
+  
+  Question: {question}
+  
+  Please provide a detailed answer based on the context above. Include citations with document names and page numbers.
+
+# Follow-up query template
+followup_template: |
+  Previous conversation:
+  {history}
+  
+  Context from documents:
+  {context}
+  
+  Follow-up question: {question}
+  
+  Please provide an answer considering the conversation history and the new context.
+
+# Citation format
+citation_format: |
+  [Source: {document}, Page {page}]
+
+# No answer template
+no_answer_response: |
+  I apologize, but I couldn't find relevant information in the documents to answer your question. 
+  The available documents may not contain this information, or you might want to rephrase your question.
