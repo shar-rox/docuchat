@@ -67,7 +67,7 @@ Next: Day 2 - Vector embeddings and ChromaDB integration"
 
 # Create GitHub repository and push
 git branch -M main
-git remote add origin https://github.com/yourusername/docuchat.git
+git remote add origin https://github.com/shar-rox/docuchat.git
 git push -u origin main
 ```
 
@@ -118,7 +118,7 @@ Features PDF ingestion, semantic search with vector embeddings, and LLM-powered 
 
 **Tech:** Python, ChromaDB, Sentence Transformers, LangChain, OpenAI/Anthropic APIs
 
-[View Project →](https://github.com/yourusername/docuchat)
+[View Project →](https://github.com/shar-rox/docuchat)
 ```
 
 ## Metrics for Day 1
