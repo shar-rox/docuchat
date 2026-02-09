@@ -78,7 +78,7 @@ python -m src.cli chat
 - **Framework**: LangChain
 - **PDF Processing**: PyMuPDF
 - **CLI**: Rich (beautiful terminal output)
-
+ 
 ## 📈 Project Status
 
 - [x] Day 1: Project setup & document processing
